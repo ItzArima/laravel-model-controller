@@ -1,3 +1,5 @@
 <footer>
-    <h1>This is the footer</h1>
+    <div class="footer-container">
+        <p>Template made with &hearts; by <span>ros</span></p>
+    </div>
 </footer>

@@ -4,3 +4,56 @@
     padding: 0;
     font-family: 'Nunito' , sans-serif;
 }
+
+body{
+
+    header{
+
+        .header-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem 7.5rem;
+            background-color: #072227;
+            color: white;
+
+            .left{
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                
+                nav{
+
+                    a{
+                        color: white;
+                        font-weight: 900;
+                        text-decoration: none;
+                        border-bottom: 2px solid transparent;
+                        
+                        &:hover{
+                            border-bottom: 2px solid white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        background-color: #072227;
+
+        .footer-container{
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            color: white;
+        }
+    }
+}

@@ -19,14 +19,18 @@
                             <h3>{{$item->original_title}}</h3>
                         </div>
                     </div>
-                    <div class="nationality">
-                        <p>{{$item->nationality}}</p>
-                    </div>
-                    <div class="date">
-                        <p>{{$item->date}}</p>
-                    </div>
-                    <div class="vote">
-                        <p>{{$item->voto}}</p>
+                    <div class="card-bottom">
+                        <div class="date-natationality">
+                            <div class="nationality">
+                                <p>{{$item->nationality}}</p>
+                            </div>
+                            <div class="date">
+                                <p>{{$item->date}}</p>
+                            </div>
+                        </div>
+                        <div class="vote {{$item->vote >= 6 ? 'positive' : 'negative'}}">
+                            <p>{{$item->vote}} / 10</p>
+                        </div>
                     </div>
                 </div>
             @endforeach
