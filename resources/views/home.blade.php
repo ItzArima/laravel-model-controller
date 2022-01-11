@@ -5,6 +5,8 @@
 
 @section('content')
     <main>
-        <h1>THIS IS THE HOME PAGE</h1>
+        @foreach(DB::table('movies')->get() as $item)
+            <p>{{$item->id}}</p>
+        @endforeach
     </main>
 @endsection
