@@ -9,6 +9,7 @@ use App\Movie;
 class PageController extends Controller
 {
     public function home(){
-        return view('home');
+        $movies = Movie::all();
+        return view('home', compact('movies'));
     }
 }
