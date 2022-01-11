@@ -24,6 +24,7 @@ main .cards-container .card {
   justify-content: center;
   overflow: hidden;
   background-color: white;
+  min-height: 450px;
 }
 
 main .cards-container .card .id {
